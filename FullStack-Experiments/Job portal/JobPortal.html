@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Search Home - Semantic HTML</title>
+    <link rel="stylesheet" href="JobPortal.css" />
+  </head>
+  <body>
+    
+    <header>
+      <h1>JobFinder</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Register</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Applications</a></li>
+          <li><a href="#">Alerts</a></li>
+          <li><a href="#">Profile</a></li>
+        </ul>
+      </nav>
+    </header>
+
+      <hr>
+
+    <section role="search">
+      <h2>Find your next step</h2>
+      <p>Thousands of opportunities waiting for you.</p>
+      <form action="/search" method="GET">
+        <div>
+          <label for="skills">What (Skills, Titles, Companies):</label>
+          <input id="skills" name="q" placeholder="e.g. Designer" type="text" />
+        </div>
+        <div>
+          <label for="experience">Experience:</label>
+          <select id="experience" name="experience">
+            <option value="">Any exp.</option>
+            <option value="entry">Entry (0-2y)</option>
+            <option value="mid">Mid (3-5y)</option>
+            <option value="senior">Senior (5y+)</option>
+          </select>
+        </div>
+        <div>
+          <label for="location">Where (City):</label>
+          <input id="location" name="l" type="text" value="New York" />
+        </div>
+        <div>
+          <input type="submit" value="Search Jobs" />
+        </div>
+      </form>
+    </section>
+
+      <hr>
+
+    <main>
+      <aside>
+        <h2>Filters</h2>
+        <details>
+          <summary>Location Filters</summary>
+          <ul>
+            <li><label><input type="checkbox" /> Remote</label></li>
+            <li><label><input type="checkbox" /> On-site</label></li>
+            <li><label><input type="checkbox" /> Hybrid</label></li>
+          </ul>
+        </details>
+        <details>
+          <summary>Salary Range</summary>
+          <ul>
+            <li><label><input name="salary" type="radio" /> $50k - $100k</label></li>
+            <li><label><input name="salary" type="radio" /> $100k - $150k</label></li>
+            <li><label><input name="salary" type="radio" /> $150k+</label></li>
+          </ul>
+        </details>
+      </aside>
+
+        <hr>
+
+      <section>
+        <h2>Featured Jobs (124)</h2>
+
+          <hr>
+
+        <article>
+          <header>
+            <img alt="Loom Logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeo2eaD0hzzONyDLnxlk7HR3Y_nqe5pfffDge9sG_GNcGZsaA5yzY71gkEe6796BOHm6F6jhlZuIWysezk8GFnYZMPDOSBuVWujypxdozNYoQ-WuIe1rTnJR-Qipm-EiF4yxxmrTpIrrWumKGejp3Z9sZ-iwP53Gh7dQ7klWg50kJ4eDp4QRcwqf5L_dc2G7qKdGumOi-4n5LPixK3S5StQl1OtAZfm4zsYOLgtgCJbH5-RZoKfc_ViRwn5Yeu606gU2zKn-o5Oekf" width="50" />
+            <h3>Senior Product Designer</h3>
+            <p>Company: Loom (Rating: 4.8/5)</p>
+          </header>
+          <ul>
+            <li><strong>Experience:</strong> 5+ years</li>
+            <li><strong>Salary:</strong> $140k - $180k</li>
+            <li><strong>Location:</strong> Remote</li>
+            <li><strong>Tags:</strong> Figma, Systems</li>
+          </ul>
+          <p>We're looking for an experienced Product Designer to lead our Core Experience team. You'll work on building seamless communication tools.</p>
+          <footer>
+            <a href="#">View Details</a>
+          </footer>
+        </article>
+
+          <hr>
+
+        <article>
+          <header>
+            <img alt="Stripe Logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4y9F1k3wfZZSPdrfHXeYzdH1NqXJCM68muHkr-VRpRqhdOkRna-e8ipd7y9pSSAWdplaUOWpdBAY0zPV_Jnmn3VTnGB99QFmCC-GNb-iv03g5_my4_fxAZg0Zs9laXJ2cwyLYF2GzZVLctEGznvKKsfCjAlSEFOioatqq0_NEq4zKmgqGENBtGY1BJ2KmFzU9AEl8AhKymw8VAp6vklPR48D7uOVIvz7NaXrQFQzwu7mHsHXdzOHM-v04fwpgtruyHtzcF-PNuYbI" width="50" />
+            <h3>Software Engineer (Mobile)</h3>
+            <p>Company: Stripe (Rating: 4.9/5)</p>
+          </header>
+          <ul>
+            <li><strong>Experience:</strong> 3-5 years</li>
+            <li><strong>Salary:</strong> $160k - $210k</li>
+            <li><strong>Location:</strong> San Francisco</li>
+            <li><strong>Tags:</strong> Swift, Kotlin</li>
+          </ul>
+          <p>Build the future of online payments on iOS and Android. You will be responsible for the core SDK and mobile payment flows.</p>
+          <footer>
+            <a href="#">View Details</a>
+          </footer>
+        </article>
+
+          <hr>
+
+        <article>
+          <header>
+            <img alt="Studio Meta Logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvxy0NUgZEJK4hb_zhJHRCrzSwlI5hrkk4nN5jhqIjonR3WSDWIqOA282iPjPJcMMqI5bRPrgjqLPbiyvVQ_mRtND255C6d4ef98EPKcx0FdbleK6q-feHdX5PYjCfskxd9Sxh3JdD_70JTTE68KmCF2BVZTmI480fRTrBTddqvasPb5u_9WPbEBNH_k0sIG6thZMk3oaC0o9obAimFovF9f1uN5UF76uP0j2gYTvVKHSljSxvWbc5j3OvkvJ6sEvSja6HTs-DJ3yi" width="50" />
+            <h3>UI/UX Interaction Lead</h3>
+            <p>Company: Studio Meta (Rating: 4.5/5)</p>
+          </header>
+          <ul>
+            <li><strong>Experience:</strong> 4+ years</li>
+            <li><strong>Salary:</strong> $110k - $135k</li>
+            <li><strong>Location:</strong> New York</li>
+            <li><strong>Tags:</strong> Prototyping</li>
+          </ul>
+          <p>Lead the interaction design for high-end digital agencies. Focus on motion, usability, and aesthetic excellence.</p>
+          <footer>
+            <a href="#">View Details</a>
+          </footer>
+        </article>
+          <hr>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>© 2024 JobFinder Inc. All rights reserved.</p>
+      <p>
+        <a href="#">Privacy Policy</a> |
+        <a href="#">Terms of Service</a>
+      </p>
+        <address>
+          Contact us: <a href="mailto:support@jobfinder.com">support@jobfinder.com</a><br>
+          123 Main St, New York, NY
+        </address>
+    </footer>
+    
+  </body>
+</html>
