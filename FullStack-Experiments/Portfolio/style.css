@@ -8,14 +8,22 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    padding: 20px;
+    padding: 8px 0 8px 0;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100vw;
+    left: 0;
+    right: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
 }
 
 .headerbox {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .headername {
@@ -36,6 +44,12 @@ header {
 .headerlinks nav {
     display: flex;
     gap: 15px;
+    position: sticky;
+    top: 60px;
+    background: #222;
+    padding: 8px 0;
+    border-radius: 8px;
+    z-index: 1001;
 }
 
 .headerlinks nav a {
@@ -60,6 +74,11 @@ header .intro p {
 header img[alt="Picture"] {
     border-radius: 10px;
     border: 2px solid #ccc;
+    width: 120px !important;
+    height: 120px !important;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    object-fit: cover;
 }
 
 section h1,
@@ -80,6 +99,7 @@ section[role='projects'] {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 15px;
+    margin-top: 24px;
 }
 
 article h3 {
@@ -179,6 +199,12 @@ footer {
     color: #666;
     padding: 20px;
     background-color: #f0f0f0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    z-index: 100;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.04);
 }
 
 .muted {
