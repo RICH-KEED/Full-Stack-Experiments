@@ -402,20 +402,47 @@ article footer {
   justify-content: flex-end;
 }
 
-article footer a {
-  text-decoration: none;
-  color: var(--primary);
-  font-weight: 700;
-  font-size: 0.875rem;
-  padding: 0.5rem 1rem;
-  border: 1px solid var(--primary);
-  border-radius: var(--radius-sm);
-  transition: all 0.2s;
-}
 
-article footer a:hover {
+/* Job Card Buttons */
+article footer .apply-btn {
   background: var(--primary);
   color: var(--text-inverse);
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: var(--radius-sm);
+  margin-right: 0.7rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 2px 8px -2px #10b98133;
+}
+article footer .apply-btn:hover:not(:disabled) {
+  background: var(--primary-hover);
+  transform: translateY(-2px) scale(1.04);
+}
+article footer .apply-btn:disabled {
+  background: #059669;
+  color: #fff;
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+article footer .delete-btn {
+  background: #ef4444;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 2px 8px -2px #ef444433;
+}
+article footer .delete-btn:hover {
+  background: #b91c1c;
+  transform: translateY(-2px) scale(1.04);
 }
 
 /* Main Footer */

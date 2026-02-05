@@ -77,69 +77,46 @@
 
         <hr>
 
+
       <section>
-        <h2>Featured Jobs (124)</h2>
-
-          <hr>
-
-        <article>
-          <header>
-            <img alt="Loom Logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeo2eaD0hzzONyDLnxlk7HR3Y_nqe5pfffDge9sG_GNcGZsaA5yzY71gkEe6796BOHm6F6jhlZuIWysezk8GFnYZMPDOSBuVWujypxdozNYoQ-WuIe1rTnJR-Qipm-EiF4yxxmrTpIrrWumKGejp3Z9sZ-iwP53Gh7dQ7klWg50kJ4eDp4QRcwqf5L_dc2G7qKdGumOi-4n5LPixK3S5StQl1OtAZfm4zsYOLgtgCJbH5-RZoKfc_ViRwn5Yeu606gU2zKn-o5Oekf" width="50" />
-            <h3>Senior Product Designer</h3>
-            <p>Company: Loom (Rating: 4.8/5)</p>
-          </header>
-          <ul>
-            <li><strong>Experience:</strong> 5+ years</li>
-            <li><strong>Salary:</strong> $140k - $180k</li>
-            <li><strong>Location:</strong> Remote</li>
-            <li><strong>Tags:</strong> Figma, Systems</li>
-          </ul>
-          <p>We're looking for an experienced Product Designer to lead our Core Experience team. You'll work on building seamless communication tools.</p>
-          <footer>
-            <a href="#">View Details</a>
-          </footer>
-        </article>
-
-          <hr>
-
-        <article>
-          <header>
-            <img alt="Stripe Logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4y9F1k3wfZZSPdrfHXeYzdH1NqXJCM68muHkr-VRpRqhdOkRna-e8ipd7y9pSSAWdplaUOWpdBAY0zPV_Jnmn3VTnGB99QFmCC-GNb-iv03g5_my4_fxAZg0Zs9laXJ2cwyLYF2GzZVLctEGznvKKsfCjAlSEFOioatqq0_NEq4zKmgqGENBtGY1BJ2KmFzU9AEl8AhKymw8VAp6vklPR48D7uOVIvz7NaXrQFQzwu7mHsHXdzOHM-v04fwpgtruyHtzcF-PNuYbI" width="50" />
-            <h3>Software Engineer (Mobile)</h3>
-            <p>Company: Stripe (Rating: 4.9/5)</p>
-          </header>
-          <ul>
-            <li><strong>Experience:</strong> 3-5 years</li>
-            <li><strong>Salary:</strong> $160k - $210k</li>
-            <li><strong>Location:</strong> San Francisco</li>
-            <li><strong>Tags:</strong> Swift, Kotlin</li>
-          </ul>
-          <p>Build the future of online payments on iOS and Android. You will be responsible for the core SDK and mobile payment flows.</p>
-          <footer>
-            <a href="#">View Details</a>
-          </footer>
-        </article>
-
-          <hr>
-
-        <article>
-          <header>
-            <img alt="Studio Meta Logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvxy0NUgZEJK4hb_zhJHRCrzSwlI5hrkk4nN5jhqIjonR3WSDWIqOA282iPjPJcMMqI5bRPrgjqLPbiyvVQ_mRtND255C6d4ef98EPKcx0FdbleK6q-feHdX5PYjCfskxd9Sxh3JdD_70JTTE68KmCF2BVZTmI480fRTrBTddqvasPb5u_9WPbEBNH_k0sIG6thZMk3oaC0o9obAimFovF9f1uN5UF76uP0j2gYTvVKHSljSxvWbc5j3OvkvJ6sEvSja6HTs-DJ3yi" width="50" />
-            <h3>UI/UX Interaction Lead</h3>
-            <p>Company: Studio Meta (Rating: 4.5/5)</p>
-          </header>
-          <ul>
-            <li><strong>Experience:</strong> 4+ years</li>
-            <li><strong>Salary:</strong> $110k - $135k</li>
-            <li><strong>Location:</strong> New York</li>
-            <li><strong>Tags:</strong> Prototyping</li>
-          </ul>
-          <p>Lead the interaction design for high-end digital agencies. Focus on motion, usability, and aesthetic excellence.</p>
-          <footer>
-            <a href="#">View Details</a>
-          </footer>
-        </article>
-          <hr>
+        <h2 id="job-count">Featured Jobs (0)</h2>
+        <!-- Add Job Form -->
+        <form id="add-job-form" style="margin-bottom:2rem;display:flex;flex-wrap:wrap;gap:1rem;align-items:flex-end;">
+          <div>
+            <label for="job-title">Job Title</label>
+            <input type="text" id="job-title" required placeholder="e.g. Frontend Developer" />
+          </div>
+          <div>
+            <label for="company">Company</label>
+            <input type="text" id="company" required placeholder="e.g. Google" />
+          </div>
+          <div>
+            <label for="experience">Experience</label>
+            <input type="text" id="job-experience" required placeholder="e.g. 2+ years" />
+          </div>
+          <div>
+            <label for="salary">Salary</label>
+            <input type="text" id="salary" required placeholder="e.g. $100k - $150k" />
+          </div>
+          <div>
+            <label for="location">Location</label>
+            <input type="text" id="job-location" required placeholder="e.g. Remote" />
+          </div>
+          <div>
+            <label for="tags">Tags</label>
+            <input type="text" id="tags" placeholder="e.g. React, Node.js" />
+          </div>
+          <div style="flex-basis:100%;height:0;"></div>
+          <div>
+            <label for="description">Description</label>
+            <input type="text" id="description" required placeholder="Short job description" />
+          </div>
+          <div>
+            <button type="submit" style="background:var(--primary);color:var(--text-inverse);padding:0.75rem 1.5rem;border:none;border-radius:var(--radius-sm);font-weight:600;cursor:pointer;">Add Job</button>
+          </div>
+        </form>
+        <!-- Dynamic Job List -->
+        <div id="job-list"></div>
       </section>
 
     </main>
