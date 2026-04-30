@@ -1,7 +1,8 @@
 # OS files
 .DS_Store
 Thumbs.db
-
+kilo
+.kilo
 # Editor/IDE
 .vscode/
 .idea/
